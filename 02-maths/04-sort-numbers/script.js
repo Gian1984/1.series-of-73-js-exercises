@@ -25,3 +25,8 @@
     });
 
 })();
+
+// Put the value of id numbers inside a variable
+//transformer ma valeur in a array 
+//passar string en numero 
+//ordener numero de l'array de manier croissant
