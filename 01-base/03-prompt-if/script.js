@@ -9,8 +9,16 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-  // your code here
+
+(function() {
+    let cake = window.prompt("do you wanna cake? answer yes or no ");
+    if (cake === 'yes') {
+        alert("Congraturation!");
+    } else if (cake === 'no') {
+        alert("More cake for me then :p !");
+    } else {
+        alert("answer must be yes or no!");
+    }
 
 })();

@@ -10,7 +10,14 @@
 // You will have time to focus on it later.
 
 (function() {
+    let confirm = "no";
+    while (confirm != "yes") {
+        let age = window.prompt("What's your age? :");
+        let gender = window.prompt("What's your gender? :");
+        let town = window.prompt("What's your town? : ");
 
-    // your code here
+        alert("Are your info correct? :" + age + " " + gender + " " + town);
 
+        confirm = window.prompt("confirm? yes or no bitch");
+    }
 })();

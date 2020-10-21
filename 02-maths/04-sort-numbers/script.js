@@ -15,6 +15,11 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
+        let num = document.getElementById("numbers").value;
+        let numArray = num.split(', '); // split string on comma space
+        let x = numArray.map((i) => Number(i)); // array into integer
+        alert(x.sort((a, b) => a - b)); // ascending order
+
         // your code here
 
     });

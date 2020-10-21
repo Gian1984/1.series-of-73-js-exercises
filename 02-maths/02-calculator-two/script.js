@@ -12,7 +12,33 @@
 (() => {
     // to get the value of an input: document.getElementById("element-id").value
 
+
+
     const performOperation = operation => {
+        let a = new Number(document.getElementById("op-one").value);
+        let b = new Number(document.getElementById("op-two").value);
+        switch (operation) {
+            case 'addition':
+                alert(a + b);
+                break;
+
+            case 'substraction':
+                alert(a - b);
+                break;
+
+
+            case 'multiplication':
+                alert(a * b);
+                break;
+
+            case 'division':
+                alert(a / b);
+                break;
+
+            default:
+                alert("Dont really know...")
+        }
+
         // perform the operation
     };
 
