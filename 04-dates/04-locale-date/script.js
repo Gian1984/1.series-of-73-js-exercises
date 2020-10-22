@@ -11,8 +11,16 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
-    // your code here
+    let date1 = Date();
+    let dateLocale = date1.toLocaleString('en-EN', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric'
+    });
+    document.getElementById("target").innerHTML = dateLocale;
 
 })();
