@@ -11,6 +11,13 @@
 
 (function() {
 
-    // your code here
+    // to get the value of an input: document.getElementById("element-id").value
+
+    document.getElementById("run").addEventListener("click", function() {
+        let n = document.getElementById("color").value;
+        document.body.style.backgroundColor = n
+
+    });
+
 
 })();

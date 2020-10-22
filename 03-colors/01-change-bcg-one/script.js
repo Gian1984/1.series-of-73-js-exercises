@@ -11,6 +11,25 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("red").addEventListener("click", function() {
+        // perform an addition 
+        document.body.style.backgroundColor = "red"
+
+    });
+
+    document.getElementById("green").addEventListener("click", function() {
+        // perform an substraction
+        document.body.style.backgroundColor = "green"
+    });
+
+    document.getElementById("yellow").addEventListener("click", function() {
+        // perform an multiplication
+        document.body.style.backgroundColor = "yellow"
+    });
+
+    document.getElementById("blue").addEventListener("click", function() {
+        // perform an division
+        document.body.style.backgroundColor = "blue"
+    });
 
 })();

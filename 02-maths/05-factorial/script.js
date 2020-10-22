@@ -9,14 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+// --- When you click the button, get the number in the input, and show its factorial. ---
+
 (function() {
-    
+
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
+        let n = document.getElementById("number").value;
 
-        // your code here
+        function factorialize(num) {
+            let total = 1
+            for (let i = 1; i <= num; i++) {
+                total *= i
+            }
+            alert(total);
+        }
 
+        factorialize(n);
     });
+
 
 })();
