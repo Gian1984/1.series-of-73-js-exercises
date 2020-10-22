@@ -12,7 +12,17 @@
 (function() {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    let x = [];
+    let d = new Date("2011-04-20T19:30:51.01");
+    d.getHours(); // => 9
 
+    if (d.getHours() > 5 && d.getHours() < 18) {
+        x = "Hello"
+    } else {
+        x = "Good evening"
+    };
+
+    document.getElementById("target").innerHTML = (x);
     // your code here
 
 })();
