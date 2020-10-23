@@ -9,23 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+//When you click the button, display on the console, one after the other, each value of the array fruits. Use the forEach method.
+
 (function() {
+    document.getElementById("run").addEventListener("click", function() {
+        var fruits = [
+            "apple",
+            "peer",
+            "strawberry",
+            "tomato",
+            "kiwi",
+            "banana",
+            "orange",
+            "mandarine",
+            "durian",
+            "peach",
+            "grape",
+            "cherry",
+        ];
+        fruits.forEach(item => console.log(item)); // ES6
 
-    var fruits = [
-        "apple",
-        "peer",
-        "strawberry",
-        "tomato",
-        "kiwi",
-        "banana",
-        "orange",
-        "mandarine",
-        "durian",
-        "peach",
-        "grape",
-        "cherry",
-    ];
-
-    // your code here
-
+    })
 })();
