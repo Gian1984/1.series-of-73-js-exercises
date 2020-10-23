@@ -8,22 +8,32 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+// When you click the button, do the following transformations to the array fruits: remove 
+//the first and the last element, add an element "banana" at the start of the array, and add an element "kiwi" at the end.
+
 
 (function() {
+    document.getElementById("run").addEventListener("click", function() {
+        var fruits = [
+            "pomme",
+            "poire",
+            "fraise",
+            "tomate",
+            "orange",
+            "mandarine",
+            "durian",
+            "pêche",
+            "raisin",
+            "cerise",
+        ];
+        fruits.pop();
+        fruits.shift();
+        fruits.unshift("banana");
+        fruits.push("kiwi");
+        console.log(fruits);
 
-    var fruits = [
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "orange",
-        "mandarine",
-        "durian",
-        "pêche",
-        "raisin",
-        "cerise",
-    ];
 
-    // your code here
 
+
+    })
 })();
