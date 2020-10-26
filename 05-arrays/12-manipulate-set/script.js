@@ -9,19 +9,30 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(() => {
-    const fruits = new Set([
-        "apple",
-        "pear",
-        "strawberry",
-        "tomato",
-        "orange",
-        "mandarin",
-        "durian",
-        "peach",
-        "grape",
-        "cherry",
-    ]);
+//When you click the button, operates the following transformations on the Set fruits : 
+//remove the "apple" and the "cerise", add a "banana" and a "kiwi".
+//Finally, display the Set's result in the console.
 
-    // your code here
+//https://developer.mozilla.org/it/docs/Web/JavaScript/Reference/Global_Objects/Set
+
+(() => {
+    document.getElementById("run").addEventListener("click", function() {
+        const fruits = new Set([
+            "apple",
+            "pear",
+            "strawberry",
+            "tomato",
+            "orange",
+            "mandarin",
+            "durian",
+            "peach",
+            "grape",
+            "cherry",
+        ]);
+        fruits.delete("apple");
+        fruits.delete("cerise");
+        fruits.add("banana");
+        fruits.add("kiwi");
+        console.log(fruits)
+    })
 })();
