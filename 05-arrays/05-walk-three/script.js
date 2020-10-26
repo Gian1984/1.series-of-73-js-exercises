@@ -37,8 +37,16 @@
                 email: "mcoal4@creativecommons.org",
             },
         ];
-        people.forEach(item => console.log(item)); // ES6
-        // your code here
+        people.forEach(item => console.log(item.firstname + item.lastname)); // ES6
+
+
+
+        /*const copy = [];
+
+        people.forEach(function(people) {
+            copy.push(people);
+        });
+        console.log(people)*/
     })
 
 })();

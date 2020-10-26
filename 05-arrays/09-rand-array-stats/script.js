@@ -10,7 +10,18 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    document.getElementById("run").addEventListener("click", function() {
+        let arr = [];
+        for (let i = 0; i < 10; i++) {
+            arr.push(Math.floor(Math.random() * 100 + 1));
+        }
+        for (let j = 1; j < 11; j++) {
+            document.getElementById("n-" + j).innerHTML = arr[j - 1];
+        }
+        document.getElementById("min").innerHTML = Math.min(...arr);
+        document.getElementById("max").innerHTML = Math.max(...arr);
+        let sum = arr.reduce(function(a, b) { return a + b; }, 0);
+        document.getElementById("sum").innerHTML = sum;
+        document.getElementById("average").innerHTML = sum / arr.length;
+    })
 })();

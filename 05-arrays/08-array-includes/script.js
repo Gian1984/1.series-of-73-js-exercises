@@ -10,22 +10,31 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", function() {
+        const fruits = [
+            "apple",
+            "perry",
+            "strawberry",
+            "tomato",
+            "kiwi",
+            "banana",
+            "orange",
+            "mandarin",
+            "durian",
+            "peach",
+            "grapes",
+            "cherry",
+        ];
 
-    const fruits = [
-        "apple",
-        "perry",
-        "strawberry",
-        "tomato",
-        "kiwi",
-        "banana",
-        "orange",
-        "mandarin",
-        "durian",
-        "peach",
-        "grapes",
-        "cherry",
-    ];
 
-    // your code here
+        fruits.forEach(element => {
+            if (element == "apple") {
+                console.log("YES")
+            } else {
+                console.log("NO")
+            }
+        })
+
+    })
 
 })();

@@ -91,12 +91,16 @@
             },
         ];
         //https://www.javascripture.com/Object
-        let x = {
+        /*let x = {
             firstname: "Jean",
             lastname: "Dupont",
             email: "jdupont@elpais.com",
         }
-        console.log(x.email);
-
+        console.log(x.email);*/
+        people.forEach(element => {
+            if ((element.firstname == "Jean") && (element.lastname == "Dupont")) {
+                console.log("Jean Dupont: " + element.email + "\n" + "index: " + people.indexOf(element) + "/" + (people.length - 1));
+            }
+        })
     })
 })();
