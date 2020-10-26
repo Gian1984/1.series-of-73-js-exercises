@@ -53,8 +53,3 @@ do not overwrite it with the default value! */
 
     })
 })();
-
-/*Object.defineProperty(computers, "fullName", {
-            get: function() { return defaultProps.available + " ," + defaultProps.user + " ," + defaultProps.os; }
-        });
-        console.log(computers)*/
