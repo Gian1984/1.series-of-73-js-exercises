@@ -11,7 +11,7 @@
 
 (function() {
 
-    var gallery= [
+    var gallery = [
         "../../_shared/img/bell.svg",
         "../../_shared/img/clock.svg",
         "../../_shared/img/compass.svg",
@@ -19,6 +19,14 @@
         "../../_shared/img/map.svg",
     ];
 
-    // your code here
+    let image = document.querySelector("img");
+    let next = document.getElementById("next")
+    let index = 0;
+    next.addEventListener("click", () => {
+        index = index + 1;
+        image.setAttribute('src', gallery[index]);
+
+    })
+
 
 })();

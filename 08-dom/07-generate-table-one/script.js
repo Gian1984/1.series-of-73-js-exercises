@@ -10,7 +10,19 @@
 // You will have time to focus on it later.
 
 (function() {
+    let column;
+    let row;
+    let array = document.createElement("table");
 
-    // your code here
+    array.setAttribute("id", "table");
+    document.getElementById("target").insertBefore(array, null);
+    for (let i = 1; i <= 10; i++) {
+        row = document.createElement("TR");
+        row.setAttribute("id", "tr-" + i);
+        document.querySelector("#table").appendChild(row);
+        column = document.createElement("TD");
+        document.querySelector("#tr-" + i).appendChild(column);
+
+    };
 
 })();
