@@ -9,8 +9,12 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+//Select the element with the id "target" (not using getElementById!) and replace its content with "owned".
+
+//https://www.w3schools.com/jsref/met_document_queryselector.asp
+
 (function() {
 
-    // your code here
+    document.querySelector("#target").innerHTML = "Owned";
 
 })();
