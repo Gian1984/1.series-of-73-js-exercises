@@ -11,6 +11,18 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        let field = document.getElementsByClassName('field');
+
+        if (document.getElementById('pass-one').value ==
+            document.getElementById('pass-two').value) {
+            alert("Welcome with us!")
+
+        } else {
+            document.getElementById("pass-one").setAttribute("style", "border :1px solid red");
+            document.getElementById("pass-two").setAttribute("style", "border :1px solid red");
+
+        }
+    })
 
 })();
