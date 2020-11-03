@@ -11,6 +11,17 @@
 
 (function() {
 
-    // your code here
 
+    document.getElementById("pass-one").addEventListener("input", () => {
+        let str = document.getElementById("pass-one").value;
+        let confirm;
+        document.getElementById("pass-one").setAttribute("maxlength", 8)
+        let patt = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]{2})(?=.{8,})");
+        if (!patt.test(str)) {
+            return confirm = document.getElementById("validity").innerHTML = "Not ok";
+        } else {
+            return confirm = document.getElementById("validity").innerHTML = "Ok";
+        }
+
+    })
 })();

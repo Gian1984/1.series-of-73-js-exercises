@@ -11,6 +11,16 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+
+            if (document.getElementById('pass-one').value ==
+                document.getElementById('pass-two').value) {
+                alert("Welcome with us!")
+
+            } else {
+                document.querySelector("input").setAttribute("class", "error");
+            }
+        }) // your code here
 
 })();
